@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery - Himalayan Trials</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Himalayan Trials</h1>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="packages.html">Tour Packages</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+            <div class="book-btn">
+                <a href="booking.html" class="btn">Book Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="banner-content">
+            <h1>Photo Gallery</h1>
+            <p>Stunning images from our Himalayan adventures</p>
+        </div>
+    </section>
+
+    <!-- Gallery Filters -->
+    <section class="gallery-filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="mountains">Mountains</button>
+                <button class="filter-btn" data-filter="trekking">Trekking</button>
+                <button class="filter-btn" data-filter="culture">Culture</button>
+                <button class="filter-btn" data-filter="wildlife">Wildlife</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="gallery-grid">
+                <!-- Mountains -->
+                <div class="gallery-item" data-category="mountains">
+                    <img src="https://images.unsplash.com/photo-1533130061792-64b345e4a833" alt="Mount Everest">
+                    <div class="gallery-overlay">
+                        <h3>Mount Everest</h3>
+                        <p>The world's highest peak</p>
+                        <a href="#" class="gallery-zoom"><i class="fas fa-search-plus"></i></a>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="mountains">
+                    <img src="https://images.unsplash.com/photo-1516690553959-71a414d6b9b8" alt="Annapurna Range">
+                    <div class="gallery-overlay">
+                        <h3>Annapurna Range</h3>
+                        <p>Spectacular mountain views</p>
+                        <a href="#" class="gallery-zoom"><i class="fas fa-search-plus"></i></a>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="mountains">
+                    <img src="https://images.unsplash.com/photo-1589553416260-f586c8f1514f" alt="Mount Kailash">
+                    <div class="gallery-overlay">
+                        <h3>Mount Kailash</h3>
+                        <p>Sacred peak in Tibet</p>
+                        <a href="#" class="gallery-zoom"><i class="fas fa-search-plus"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Trekking -->
+                <div class="gallery-item" data-category="trekking">
+                    <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa" alt="Trekking in Langtang">
+                    <div class="gallery-overlay">
+                        <h3>Langtang Trek</h3>
+                        <p>Scenic trails through forests</p>
+                        <a href="#" class="gallery-zoom"><i class="fas fa-search-plus"></i></a>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="trekking">
+                    <img src="https://images.unsplash.com/photo-1518002054494-3a6f94352e9d" alt="Poon Hill Trek">
+                    <div class="gallery-overlay">
+                        <h3>Poon Hill</h3>
+                        <p>Spectacular sunrise views</p>
+                        <a href="#" class="gallery-zoom"><i class="fas fa-search-plus"></i></a>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="trekking">
+                    <img src="https://images.unsplash.com/photo-1506038634487-60a69ae4b7b1" alt="Valley of Flowers">
+                    <div class="gallery-overlay">
+                        <h3>Valley of Flowers</h3>
+                        <p>Colorful alpine meadows</p>
+                        <a href="#" class="gallery-zoom"><i class="fas fa-search-plus"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Culture -->
+                <div class="gallery-item" data-category="culture">
+                    <img src="https://images.unsplash.com/photo-1531354755998-195b9eca7061" alt="Bhutanese Monastery">
+                    <div class="gallery-overlay">
+                        <h3>Bhutanese Monastery</h3>
+                        <p>Ancient Buddhist traditions</p>
+                        <a href="#" class="gallery-zoom"><i class="fas fa-search-plus"></i></a>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="culture">
+                    <img src="https://images.unsplash.com/photo-1530519507795-42212fcf62a4" alt="Tibetan Prayer Flags">
+                    <div class="gallery-overlay">
+                        <h3>Prayer Flags</h3>
+                        <p>Colorful symbols of peace</p>
+                        <a href="#" class="gallery-zoom"><i class="fas fa-search-plus"></i></a>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="culture">
+                    <img src="https://images.unsplash.com/photo-1609970957077-6baa39b4c8dc" alt="Bhutanese Festival">
+                    <div class="gallery-overlay">
+                        <h3>Bhutanese Festival</h3>
+                        <p>Traditional celebrations</p>
+                        <a href="#" class="gallery-zoom"><i class="fas fa-search-plus"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Wildlife -->
+                <div class="gallery-item" data-category="wildlife">
+                    <img src="https://images.unsplash.com/photo-1549366021-9f761d450615" alt="Snow Leopard">
+                    <div class="gallery-overlay">
+                        <h3>Snow Leopard</h3>
+                        <p>Rare Himalayan predator</p>
+                        <a href="#" class="gallery-zoom"><i class="fas fa-search-plus"></i></a>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="wildlife">
+                    <img src="https://images.unsplash.com/photo-1566159196870-56191d4262b4" alt="Himalayan Monal">
+                    <div class="gallery-overlay">
+                        <h3>Himalayan Monal</h3>
+                        <p>Colorful mountain pheasant</p>
+                        <a href="#" class="gallery-zoom"><i class="fas fa-search-plus"></i></a>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="wildlife">
+                    <img src="https://images.unsplash.com/photo-1541278107931-e006523892df" alt="Red Panda">
+                    <div class="gallery-overlay">
+                        <h3>Red Panda</h3>
+                        <p>Endangered Himalayan mammal</p>
+                        <a href="#" class="gallery-zoom"><i class="fas fa-search-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Modal -->
+    <div class="gallery-modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modal-image">
+        <div class="modal-caption"></div>
+        <a class="modal-prev">&#10094;</a>
+        <a class="modal-next">&#10095;</a>
+    </div>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Get the latest updates on new destinations and special offers</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Himalayan Trials</h2>
+                    <p>Your gateway to Himalayan adventures</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="packages.html">Tour Packages</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Popular Treks</h3>
+                    <ul>
+                        <li><a href="packages.html">Everest Base Camp</a></li>
+                        <li><a href="packages.html">Annapurna Circuit</a></li>
+                        <li><a href="packages.html">Langtang Valley</a></li>
+                        <li><a href="packages.html">Manaslu Circuit</a></li>
+                        <li><a href="packages.html">Upper Mustang</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Trekking Lane, Kathmandu, Nepal</p>
+                    <p><i class="fas fa-phone"></i> +977 1234 5678</p>
+                    <p><i class="fas fa-envelope"></i> info@himalayantrials.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Himalayan Trials. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+</html>

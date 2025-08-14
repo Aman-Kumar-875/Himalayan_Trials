@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - Himalayan Trials</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Himalayan Trials</h1>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="destinations.html" class="active">Destinations</a></li>
+                    <li><a href="packages.html">Tour Packages</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+            <div class="book-btn">
+                <a href="booking.html" class="btn">Book Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="banner-content">
+            <h1>Our Destinations</h1>
+            <p>Explore the most breathtaking locations across the Himalayan range</p>
+        </div>
+    </section>
+
+    <!-- Destination Filters -->
+    <section class="destination-filters">
+        <div class="container">
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label>Country:</label>
+                    <select id="country-filter">
+                        <option value="all">All Countries</option>
+                        <option value="nepal">Nepal</option>
+                        <option value="india">India</option>
+                        <option value="bhutan">Bhutan</option>
+                        <option value="tibet">Tibet</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Activity Type:</label>
+                    <select id="activity-filter">
+                        <option value="all">All Activities</option>
+                        <option value="trekking">Trekking</option>
+                        <option value="climbing">Climbing</option>
+                        <option value="cultural">Cultural Tours</option>
+                        <option value="biking">Mountain Biking</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Difficulty:</label>
+                    <select id="difficulty-filter">
+                        <option value="all">All Levels</option>
+                        <option value="easy">Easy</option>
+                        <option value="moderate">Moderate</option>
+                        <option value="challenging">Challenging</option>
+                        <option value="extreme">Extreme</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Duration:</label>
+                    <select id="duration-filter">
+                        <option value="all">Any Duration</option>
+                        <option value="short">1-7 Days</option>
+                        <option value="medium">8-14 Days</option>
+                        <option value="long">15+ Days</option>
+                    </select>
+                </div>
+                <button id="apply-filters" class="btn">Apply Filters</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Grid -->
+    <section class="destinations-section">
+        <div class="container">
+            <div class="destinations-grid">
+                <!-- Nepal Destinations -->
+                <div class="destination-card" data-country="nepal" data-activity="trekking" data-difficulty="challenging" data-duration="medium">
+                    <div class="destination-img">
+                        <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff" alt="Everest Base Camp">
+                        <div class="destination-overlay">
+                            <h3>Everest Base Camp</h3>
+                            <p>Nepal</p>
+                        </div>
+                    </div>
+                    <div class="destination-info">
+                        <div class="destination-details">
+                            <span><i class="fas fa-calendar"></i> 14 Days</span>
+                            <span><i class="fas fa-mountain"></i> Trekking</span>
+                            <span><i class="fas fa-signal"></i> Challenging</span>
+                        </div>
+                        <p>Trek to the base of the world's highest mountain through stunning Sherpa villages and breathtaking landscapes.</p>
+                        <a href="packages.html" class="btn btn-sm">View Packages</a>
+                    </div>
+                </div>
+                
+                <div class="destination-card" data-country="nepal" data-activity="trekking" data-difficulty="challenging" data-duration="long">
+                    <div class="destination-img">
+                        <img src="https://images.unsplash.com/photo-1516690553959-71a414d6b9b8" alt="Annapurna Circuit">
+                        <div class="destination-overlay">
+                            <h3>Annapurna Circuit</h3>
+                            <p>Nepal</p>
+                        </div>
+                    </div>
+                    <div class="destination-info">
+                        <div class="destination-details">
+                            <span><i class="fas fa-calendar"></i> 18 Days</span>
+                            <span><i class="fas fa-mountain"></i> Trekking</span>
+                            <span><i class="fas fa-signal"></i> Challenging</span>
+                        </div>
+                        <p>One of the world's classic treks, circling the Annapurna massif and crossing the challenging Thorong La pass.</p>
+                        <a href="packages.html" class="btn btn-sm">View Packages</a>
+                    </div>
+                </div>
+                
+                <div class="destination-card" data-country="nepal" data-activity="trekking" data-difficulty="moderate" data-duration="medium">
+                    <div class="destination-img">
+                        <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa" alt="Langtang Valley">
+                        <div class="destination-overlay">
+                            <h3>Langtang Valley</h3>
+                            <p>Nepal</p>
+                        </div>
+                    </div>
+                    <div class="destination-info">
+                        <div class="destination-details">
+                            <span><i class="fas fa-calendar"></i> 10 Days</span>
+                            <span><i class="fas fa-mountain"></i> Trekking</span>
+                            <span><i class="fas fa-signal"></i> Moderate</span>
+                        </div>
+                        <p>A beautiful trek through forests and traditional villages with stunning views of the Langtang range.</p>
+                        <a href="packages.html" class="btn btn-sm">View Packages</a>
+                    </div>
+                </div>
+                
+                <!-- India Destinations -->
+                <div class="destination-card" data-country="india" data-activity="biking" data-difficulty="challenging" data-duration="medium">
+                    <div class="destination-img">
+                        <img src="https://images.unsplash.com/photo-1585005490489-2d3a0f3ae095" alt="Ladakh">
+                        <div class="destination-overlay">
+                            <h3>Ladakh Adventure</h3>
+                            <p>India</p>
+                        </div>
+                    </div>
+                    <div class="destination-info">
+                        <div class="destination-details">
+                            <span><i class="fas fa-calendar"></i> 10 Days</span>
+                            <span><i class="fas fa-motorcycle"></i> Biking</span>
+                            <span><i class="fas fa-signal"></i> Challenging</span>
+                        </div>
+                        <p>Experience the breathtaking landscapes of Ladakh on this thrilling mountain biking adventure.</p>
+                        <a href="packages.html" class="btn btn-sm">View Packages</a>
+                    </div>
+                </div>
+                
+                <div class="destination-card" data-country="india" data-activity="trekking" data-difficulty="moderate" data-duration="short">
+                    <div class="destination-img">
+                        <img src="https://images.unsplash.com/photo-1506038634487-60a69ae4b7b1" alt="Valley of Flowers">
+                        <div class="destination-overlay">
+                            <h3>Valley of Flowers</h3>
+                            <p>India</p>
+                        </div>
+                    </div>
+                    <div class="destination-info">
+                        <div class="destination-details">
+                            <span><i class="fas fa-calendar"></i> 7 Days</span>
+                            <span><i class="fas fa-mountain"></i> Trekking</span>
+                            <span><i class="fas fa-signal"></i> Moderate</span>
+                        </div>
+                        <p>Trek through a UNESCO World Heritage site famous for its meadows of endemic alpine flowers.</p>
+                        <a href="packages.html" class="btn btn-sm">View Packages</a>
+                    </div>
+                </div>
+                
+                <!-- Bhutan Destinations -->
+                <div class="destination-card" data-country="bhutan" data-activity="cultural" data-difficulty="moderate" data-duration="medium">
+                    <div class="destination-img">
+                        <img src="https://images.unsplash.com/photo-1531354755998-195b9eca7061" alt="Bhutan Cultural Tour">
+                        <div class="destination-overlay">
+                            <h3>Bhutan Cultural Tour</h3>
+                            <p>Bhutan</p>
+                        </div>
+                    </div>
+                    <div class="destination-info">
+                        <div class="destination-details">
+                            <span><i class="fas fa-calendar"></i> 8 Days</span>
+                            <span><i class="fas fa-landmark"></i> Cultural</span>
+                            <span><i class="fas fa-signal"></i> Easy</span>
+                        </div>
+                        <p>Explore the Land of the Thunder Dragon with visits to ancient monasteries and fortresses.</p>
+                        <a href="packages.html" class="btn btn-sm">View Packages</a>
+                    </div>
+                </div>
+                
+                <div class="destination-card" data-country="bhutan" data-activity="trekking" data-difficulty="challenging" data-duration="medium">
+                    <div class="destination-img">
+                        <img src="https://images.unsplash.com/photo-1609970957077-6baa39b4c8dc" alt="Druk Path Trek">
+                        <div class="destination-overlay">
+                            <h3>Druk Path Trek</h3>
+                            <p>Bhutan</p>
+                        </div>
+                    </div>
+                    <div class="destination-info">
+                        <div class="destination-details">
+                            <span><i class="fas fa-calendar"></i> 9 Days</span>
+                            <span><i class="fas fa-mountain"></i> Trekking</span>
+                            <span><i class="fas fa-signal"></i> Moderate</span>
+                        </div>
+                        <p>A spectacular high-altitude trek connecting Paro and Thimphu, passing through forests and alpine lakes.</p>
+                        <a href="packages.html" class="btn btn-sm">View Packages</a>
+                    </div>
+                </div>
+                
+                <!-- Tibet Destinations -->
+                <div class="destination-card" data-country="tibet" data-activity="cultural" data-difficulty="moderate" data-duration="medium">
+                    <div class="destination-img">
+                        <img src="https://images.unsplash.com/photo-1530519507795-42212fcf62a4" alt="Lhasa Cultural Tour">
+                        <div class="destination-overlay">
+                            <h3>Lhasa Cultural Tour</h3>
+                            <p>Tibet</p>
+                        </div>
+                    </div>
+                    <div class="destination-info">
+                        <div class="destination-details">
+                            <span><i class="fas fa-calendar"></i> 8 Days</span>
+                            <span><i class="fas fa-landmark"></i> Cultural</span>
+                            <span><i class="fas fa-signal"></i> Easy</span>
+                        </div>
+                        <p>Explore the spiritual and cultural heart of Tibet with visits to ancient monasteries and palaces.</p>
+                        <a href="packages.html" class="btn btn-sm">View Packages</a>
+                    </div>
+                </div>
+                
+                <div class="destination-card" data-country="tibet" data-activity="trekking" data-difficulty="extreme" data-duration="long">
+                    <div class="destination-img">
+                        <img src="https://images.unsplash.com/photo-1589553416260-f586c8f1514f" alt="Mount Kailash Trek">
+                        <div class="destination-overlay">
+                            <h3>Mount Kailash Trek</h3>
+                            <p>Tibet</p>
+                        </div>
+                    </div>
+                    <div class="destination-info">
+                        <div class="destination-details">
+                            <span><i class="fas fa-calendar"></i> 16 Days</span>
+                            <span><i class="fas fa-mountain"></i> Trekking</span>
+                            <span><i class="fas fa-signal"></i> Extreme</span>
+                        </div>
+                        <p>A pilgrimage trek around the sacred Mount Kailash, revered by four religions as the center of the universe.</p>
+                        <a href="packages.html" class="btn btn-sm">View Packages</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="no-results" class="no-results" style="display: none;">
+                <p>No destinations match your selected filters. Please try different criteria.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Get the latest updates on new destinations and special offers</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Himalayan Trials</h2>
+                    <p>Your gateway to Himalayan adventures</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="packages.html">Tour Packages</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Popular Treks</h3>
+                    <ul>
+                        <li><a href="packages.html">Everest Base Camp</a></li>
+                        <li><a href="packages.html">Annapurna Circuit</a></li>
+                        <li><a href="packages.html">Langtang Valley</a></li>
+                        <li><a href="packages.html">Manaslu Circuit</a></li>
+                        <li><a href="packages.html">Upper Mustang</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Trekking Lane, Kathmandu, Nepal</p>
+                    <p><i class="fas fa-phone"></i> +977 1234 5678</p>
+                    <p><i class="fas fa-envelope"></i> info@himalayantrials.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Himalayan Trials. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/destination-filter.js"></script>
+</body>
+</html>

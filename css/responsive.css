@@ -1,0 +1,189 @@
+/* Responsive Styles */
+
+/* Large Devices (Desktops) */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+    
+    .story-content,
+    .contact-container,
+    .booking-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .story-image {
+        order: -1;
+    }
+}
+
+/* Medium Devices (Tablets) */
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px 0;
+        z-index: 999;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .nav-menu li {
+        margin: 15px 0;
+    }
+    
+    .hamburger {
+        display: block;
+    }
+    
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    .destinations-grid,
+    .features-grid,
+    .mission-grid,
+    .team-grid,
+    .packages-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .testimonial-slider {
+        flex-direction: column;
+    }
+    
+    .testimonial-card {
+        flex: 0 0 100%;
+    }
+    
+    .newsletter-form {
+        flex-direction: column;
+    }
+    
+    .newsletter-form input {
+        margin-bottom: 10px;
+    }
+    
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Small Devices (Mobile) */
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    
+    .hero {
+        height: 60vh;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+    
+    .section-title h2 {
+        font-size: 2rem;
+    }
+    
+    .destinations-grid,
+    .features-grid,
+    .mission-grid,
+    .team-grid,
+    .packages-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .filter-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .filter-group {
+        width: 100%;
+    }
+    
+    .filter-group select {
+        width: 100%;
+    }
+    
+    .package-features {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .page-banner {
+        height: 30vh;
+    }
+    
+    .banner-content h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Extra Small Devices */
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+    
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+    
+    .book-btn {
+        display: none;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .certification-logos {
+        flex-direction: column;
+        align-items: center;
+    }
+}
